@@ -1,37 +1,16 @@
 # flutter_screen_recorder_example
 
-A flutter plugin to record phone screen and generate `.mp4` video, this plugin inspired by [react-native-screen-recorder](https://github.com/ycswaves/react-native-screen-recorder) 
+Demonstrates how to use the flutter_screen_recorder plugin.
 
-## Accomplishement
-The screen recording feature is able to run on both platforms but the implementation is quite different on each platform.
+## Getting Started
 
-### iOS
-[ASScreenRecorder](https://github.com/alskipp/ASScreenRecorder) is included as an external library to handle the screen recording function. All I need 
+This project is a starting point for a Flutter application.
 
-The output video will be saved into iOS camera roll.
+A few resources to get you started if this is your first Flutter project:
 
-_* In this app, it's naively assumed that the recording is always the latest video in the camara roll._
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-### Android
-Work on progress..
-
-### Installation
-
-Add `flutter_screen_recorder` to your `pubspec.yamlfile`.
-
-### Usage
-
-```dart
-import 'package:flutter_screen_recorder/flutter_screen_recorder.dart';
-
-// Start screen recording 
-final result = await FlutterScreenRecorder.startRecording();
-if(result){
-    // Start screen recording succeed
-}
-
-final result = await FlutterScreenRecorder.stopRecording();
-if(result){
-    // Stop screen recording succeed
-}
-```
+For help getting started with Flutter, view our 
+[online documentation](https://flutter.dev/docs), which offers tutorials, 
+samples, guidance on mobile development, and a full API reference.
