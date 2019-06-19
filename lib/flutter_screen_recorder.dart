@@ -10,4 +10,15 @@ class FlutterScreenRecorder {
     final String version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
+
+  static Future<int> startRecording() async {
+    final int result = await _channel.invokeMethod('startRecording');
+    return result;
+  }
+
+  static Future<int> stopRecording() async {
+    final int result = await _channel.invokeMethod('stopRecording');
+    print(result);
+    return result;
+  }
 }
