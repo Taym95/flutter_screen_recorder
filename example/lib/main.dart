@@ -58,7 +58,7 @@ class _MyAppState extends State<MyApp> {
                       final result =
                           await FlutterScreenRecorder.startRecording();
                       final snackBar = SnackBar(
-                        content: Text('Screen recording $result!'),
+                        content: Text('Screen recording ${result == 1 ? 'succeed':'failed'}!'),
                         action: SnackBarAction(
                           label: 'Okey',
                           onPressed: () {},
@@ -74,7 +74,7 @@ class _MyAppState extends State<MyApp> {
                       final result =
                           await FlutterScreenRecorder.stopRecording();
                       final snackBar = SnackBar(
-                        content: Text('Screen recording $result!'),
+                        content: Text('Screen recording ${result == 1 ? 'succeed':'failed'}!'),
                         action: SnackBarAction(
                           label: 'Okey',
                           onPressed: () {},

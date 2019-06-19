@@ -18,7 +18,6 @@ class FlutterScreenRecorder {
 
   static Future<int> stopRecording() async {
     final int result = await _channel.invokeMethod('stopRecording');
-    print(result);
     return result;
   }
 }
